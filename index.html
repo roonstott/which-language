@@ -1,248 +1,257 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/scripts.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/scripts.js"></script>
   <title>Which Language?</title>
 </head>
 <body>
-
   <div class="containter">
-    
     <!--Top Half, info-->
-
     <div class="jumbotron">
       <h1>Which Language Is Right For You?</h1>
       <p>These are 6 common  programing languages.</p>
     </div>
 
-    <div class="card"><!--CARD start-->
-      <div class="row">
-        <div class="col-6">
-          <div class="card-body">
-            <h2 class="card-title">Python</h2>
-            <p class="card-text">Pythong is a popular language</p>
+    <div class="infoSection">
+      <div class="card"><!--CARD start-->
+        <div class="row">
+          <div class="col-6">
+            <div class="card-body" id="rubyCard">
+              <h2 class="card-title">Ruby</h2>
+              <p class="card-text">Ruby is a popular language</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card-body" id="c#Card">
+              <h2 class="card-title">C#</h2>
+              <p class="card-text">C# is a popular language</p>
+            </div>
           </div>
         </div>
-        <div class="col-6">
-          <div class="card-body">
-            <h2 class="card-title">Python</h2>
-            <p class="card-text">Pythong is a popular language</p>
+        <div class="row">
+          <div class="col-6">
+            <div class="card-body" id="pythonCard">
+              <h2 class="card-title">Python</h2>
+              <p class="card-text">Python is a popular language</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card-body" id="javascriptCard">
+              <h2 class="card-title">Javascript</h2>
+              <p class="card-text">Javascript is a popular language</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-6">
-          <div class="card-body">
-            <h2 class="card-title">Python</h2>
-            <p class="card-text">Pythong is a popular language</p>
+        <div class="row">
+          <div class="col-6">
+            <div class="card-body" id="rustCard">
+              <h2 class="card-title">Rust</h2>
+              <p class="card-text">Rust is a popular language</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card-body" id="goCard">
+              <h2 class="card-title">Go</h2>
+              <p class="card-text">Go is a popular language</p>
+            </div>
           </div>
         </div>
-        <div class="col-6">
-          <div class="card-body">
-            <h2 class="card-title">Python</h2>
-            <p class="card-text">Pythong is a popular language</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-6">
-          <div class="card-body">
-            <h2 class="card-title">Python</h2>
-            <p class="card-text">Pythong is a popular language</p>
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="card-body">
-            <h2 class="card-title">Python</h2>
-            <p class="card-text">Pythong is a popular language</p>
-          </div>
-        </div>
-      </div>
-    </div><!--CARD end-->
-
-    <!--Bottom Half, the survey-->
-
-    <div class="jumbotron">
-      <h1>Language Suggestion</h1>
-      <p>Answer the questions below for a suggestion of which language you might want to learn, based on your goals and interests</p>
+      </div><!--CARD end-->
     </div>
 
-    <div class="card"><!--CARD start-->
-      <form id="survey"><!--FORM start-->
+    <!--The SURVEY-->
+    <div class="" id="hiddenSecond">
+      <div class="jumbotron">
+        <h1>Language Suggestion</h1>
+        <p>Answer the questions below for a suggestion of which language you might want to learn, based on your goals and interests</p>
+      </div>
 
-        <!--Select Questions start-->
-        <div class="selectQuestions">
-          <div class="row">
+      <div class="card"><!--CARD start-->
 
+        <form id="survey"><!--FORM start-->
+          <!--Select Questions start-->
+          <div class="selectQuestions">
+            <div class="row">
+
+              <div class="card-body">
+                <div class="col-4">
+                  <h3 class="card-title">Q1</h3>
+                  <select id="q1">
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <div class="col-4">
+                  <h3 class="card-title">Q2</h3>
+                  <select id="q1">
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <div class="col-4">
+                  <h3 class="card-title">Q3</h3>
+                  <select id="q1">
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                  </select>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!--Select Questions end-->
+          <!--1 to 5 Questions start-->
+          <div class="onetofiveA">
             <div class="card-body">
-              <div class="col-4">
-                <h3 class="card-title">Q1</h3>
-                <select id="q1">
-                  <option>A</option>
-                  <option>B</option>
-                  <option>C</option>
-                </select>
+              <div class="row">
+                <div class="col-12">
+                  <h4 class="card-title">Is your thinking more linear or parallel?</h4>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <p class="card-text"><span class="left">Linear</span></p>
+                </div>
+                <div class="col-6">
+                  <p class="card-text"><span class="right">Parallel</span></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <label>
+                    <input type="radio" name="radA" value="1">
+                    1
+                  </label>
+                  <label>
+                    <input type="radio" name="radA" value="2">
+                    2
+                  </label>
+                  <label>
+                    <input type="radio" name="radA" value="3" checked>
+                    3
+                  </label>
+                  <label>
+                    <input type="radio" name="radA" value="4">
+                    4
+                  </label>
+                  <label>
+                    <input type="radio" name="radA" value="5">
+                    5
+                  </label>
+                </div>
               </div>
             </div>
+          </div>
 
+          <div class="onetofiveB">
             <div class="card-body">
-              <div class="col-4">
-                <h3 class="card-title">Q2</h3>
-                <select id="q1">
-                  <option>A</option>
-                  <option>B</option>
-                  <option>C</option>
-                </select>
+              <div class="row">
+                <div class="col-12">
+                  <h4 class="card-title">Is your thinking more linear or parallel?</h4>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <p class="card-text"><span class="left">Linear</span></p>
+                </div>
+                <div class="col-6">
+                  <p class="card-text"><span class="right">Parallel</span></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <label>
+                    <input type="radio" name="radB" value="1">
+                    1
+                  </label>
+                  <label>
+                    <input type="radio" name="radB" value="2">
+                    2
+                  </label>
+                  <label>
+                    <input type="radio" name="radB" value="3" checked>
+                    3
+                  </label>
+                  <label>
+                    <input type="radio" name="radB" value="4">
+                    4
+                  </label>
+                  <label>
+                    <input type="radio" name="radB" value="5">
+                    5
+                  </label>
+                </div>
               </div>
             </div>
+          </div>
 
+          <div class="onetofiveC">
             <div class="card-body">
-              <div class="col-4">
-                <h3 class="card-title">Q3</h3>
-                <select id="q1">
-                  <option>A</option>
-                  <option>B</option>
-                  <option>C</option>
-                </select>
+              <div class="row">
+                <div class="col-12">
+                  <h4 class="card-title">Is your thinking more linear or parallel?</h4>
+                </div>
               </div>
-            </div>
-
-          </div>
-        </div>
-        <!--Select Questions end-->
-      
-        <!--1 to 5 Questions start-->
-        <div class="onetofiveA">
-          <div class="card-body">
-            <div class="row">
-              <div class="col-12">
-                <h4 class="card-title">Is your thinking more linear or parallel?</h4>
+              <div class="row">
+                <div class="col-6">
+                  <p class="card-text"><span class="left">Linear</span></p>
+                </div>
+                <div class="col-6">
+                  <p class="card-text"><span class="right">Parallel</span></p>
+                </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-6">
-                <p class="card-text"><span class="left">Linear</span></p>
-              </div>
-              <div class="col-6">
-                <p class="card-text"><span class="right">Parallel</span></p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <label>
-                  <input type="radio" name="radA" value="1">
-                  1
-                </label>
-                <label>
-                  <input type="radio" name="radA" value="2">
-                  2
-                </label>
-                <label>
-                  <input type="radio" name="radA" value="3" checked>
-                  3
-                </label>
-                <label>
-                  <input type="radio" name="radA" value="4">
-                  4
-                </label>
-                <label>
-                  <input type="radio" name="radA" value="5">
-                  5
-                </label>
+              <div class="row">
+                <div class="col-12">
+                  <label>
+                    <input type="radio" name="radC" value="1">
+                    1
+                  </label>
+                  <label>
+                    <input type="radio" name="radC" value="2">
+                    2
+                  </label>
+                  <label>
+                    <input type="radio" name="radC" value="3" checked>
+                    3
+                  </label>
+                  <label>
+                    <input type="radio" name="radC" value="4">
+                    4
+                  </label>
+                  <label>
+                    <input type="radio" name="radC" value="5">
+                    5
+                  </label>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+          <!--1 to 5 Question end-->
+          <button type="submit">Submit</button>
+        </form><!--FORM end-->
 
-        <div class="onetofiveB">
-          <div class="card-body">
-            <div class="row">
-              <div class="col-12">
-                <h4 class="card-title">Is your thinking more linear or parallel?</h4>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-6">
-                <p class="card-text"><span class="left">Linear</span></p>
-              </div>
-              <div class="col-6">
-                <p class="card-text"><span class="right">Parallel</span></p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <label>
-                  <input type="radio" name="radB" value="1">
-                  1
-                </label>
-                <label>
-                  <input type="radio" name="radB" value="2">
-                  2
-                </label>
-                <label>
-                  <input type="radio" name="radB" value="3" checked>
-                  3
-                </label>
-                <label>
-                  <input type="radio" name="radB" value="4">
-                  4
-                </label>
-                <label>
-                  <input type="radio" name="radB" value="5">
-                  5
-                </label>
-              </div>
-            </div>
-          </div>
+      </div><!--CARD end-->
+    </div>
+    <!--The Results-->
+    <div class="hidden" id="hiddenFirst">
+      <div class="card">
+        <div class="card-body">
+          <p class="card-text">Based on your answers, it looks like <span id="languageResult"></span> would be a great language for you to look into</p>
         </div>
-
-        <div class="onetofiveC">
-          <div class="card-body">
-            <div class="row">
-              <div class="col-12">
-                <h4 class="card-title">Is your thinking more linear or parallel?</h4>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-6">
-                <p class="card-text"><span class="left">Linear</span></p>
-              </div>
-              <div class="col-6">
-                <p class="card-text"><span class="right">Parallel</span></p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <label>
-                  <input type="radio" name="radC" value="1">
-                  1
-                </label>
-                <label>
-                  <input type="radio" name="radC" value="2">
-                  2
-                </label>
-                <label>
-                  <input type="radio" name="radC" value="3" checked>
-                  3
-                </label>
-                <label>
-                  <input type="radio" name="radC" value="4">
-                  4
-                </label>
-                <label>
-                  <input type="radio" name="radC" value="5">
-                  5
-                </label>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--1 to 5 Question end-->
-
-      </form><!--FORM end-->
-    </div><!--CARD end-->
+      </div>
+    <button type="click">Take The Survey Again</button>
+    </div>
 
   </div> <!--Container end-->
 
