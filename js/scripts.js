@@ -41,7 +41,8 @@ function postReveal() {
 }
 
 function setColors(){
-  document.getElementById("rustCard").style.backgroundColor = "green"; //placeholder, complete after busienss logic and branching. 
+  let color = colorCue();
+  document.getElementById(color).style.backgroundColor = "green";
 }
 
 //Business Logic
@@ -75,5 +76,18 @@ function branchMachine(top, bottom) {
 }
 
 function colorCue() {
-  
+  let cue = makeSuggestion();
+  if (cue === "Ruby") {
+    return "rubyCard";
+  } else if (cue === "C#") {
+    return "c#Card";
+  } else if (cue=== "Python") {
+    return "pythonCard";
+  } else if (cue === "Javascript") {
+    return "javascriptCard";
+  } else if (cue === "Rust") {
+    return "rustCard";
+  } else {
+    return "goCard";
+  }
 }
