@@ -20,7 +20,7 @@ _Use this program in order to figure out what programming language would be a go
 * _Clone the repository to your own machine_
 * _Open the index.html folder using a web browser of your choice_
 * _Internet connection is required in order to enjoy all styling features_
-* _You may also view the site as hosted by gh-pages: https://roonstott.github.io/which-language 
+* _You may also view the site as hosted by gh-pages: https://roonstott.github.io/which-language_ 
 
 ## Known Bugs
 
