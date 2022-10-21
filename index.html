@@ -11,7 +11,7 @@
     <!--Top Half, info-->
     <div class="jumbotron">
       <h1>Which Language Is Right For You?</h1>
-      <p>These are 6 common  programing languages.</p>
+      <p>Of these 6 common  programing languages, surely one is the right fit for you. Read a bit about the languages, then take the survey below for a custom suggestion.</p>
     </div>
 
     <div class="infoSection">
@@ -78,10 +78,11 @@
               <div class="card-body">
                 <div class="col-4">
                   <h3 class="card-title">Q1</h3>
+                  <p class="card-text">What time of day were you born?</p>
                   <select id="q1">
-                    <option value="1">A</option>
-                    <option value="2">B</option>
-                    <option value="3">C</option>
+                    <option value="1">Morning</option>
+                    <option value="2">Afternoon</option>
+                    <option value="3">Night</option>
                   </select>
                 </div>
               </div>
@@ -89,10 +90,11 @@
               <div class="card-body">
                 <div class="col-4">
                   <h3 class="card-title">Q2</h3>
+                  <p class="card-text">How often do you consume caffeine?</p>
                   <select id="q2">
-                    <option value="1">A</option>
-                    <option value="2">B</option>
-                    <option value="3">C</option>
+                    <option value="1">Occasionally</option>
+                    <option value="2">Regularly</option>
+                    <option value="3">Constantly</option>
                   </select>
                 </div>
               </div>
@@ -100,10 +102,11 @@
               <div class="card-body">
                 <div class="col-4">
                   <h3 class="card-title">Q3</h3>
+                  <p class="card-text">Do you believe in astrology?</p>
                   <select id="q3">
-                    <option value="1">A</option>
-                    <option value="2">B</option>
-                    <option value="3">C</option>
+                    <option value="1">Not at all</option>
+                    <option value="2">Somewhat</option>
+                    <option value="3">Very much so</option>
                   </select>
                 </div>
               </div>
@@ -116,15 +119,15 @@
             <div class="card-body">
               <div class="row">
                 <div class="col-12">
-                  <h4 class="card-title">Is your thinking more linear or parallel?</h4>
+                  <h4 class="card-title">Would you rather die of boredom or of fright?</h4>
                 </div>
               </div>
               <div class="row">
                 <div class="col-6">
-                  <p class="card-text"><span class="left">Linear</span></p>
+                  <p class="card-text"><span class="left">Boredom</span></p>
                 </div>
                 <div class="col-6">
-                  <p class="card-text"><span class="right">Parallel</span></p>
+                  <p class="card-text"><span class="right">Fright</span></p>
                 </div>
               </div>
               <div class="row">
@@ -200,15 +203,15 @@
             <div class="card-body">
               <div class="row">
                 <div class="col-12">
-                  <h4 class="card-title">Is your thinking more linear or parallel?</h4>
+                  <h4 class="card-title">Do you care more about fame or fortune?</h4>
                 </div>
               </div>
               <div class="row">
                 <div class="col-6">
-                  <p class="card-text"><span class="left">Linear</span></p>
+                  <p class="card-text"><span class="left">Fame</span></p>
                 </div>
                 <div class="col-6">
-                  <p class="card-text"><span class="right">Parallel</span></p>
+                  <p class="card-text"><span class="right">Fortune</span></p>
                 </div>
               </div>
               <div class="row">
@@ -240,14 +243,13 @@
           <!--1 to 5 Question end-->
           <button type="submit">Submit</button>
         </form><!--FORM end-->
-
       </div><!--CARD end-->
     </div>
     <!--The Results-->
     <div class="hidden" id="hiddenFirst">
       <div class="card">
         <div class="card-body">
-          <p class="card-text">Based on your answers, it looks like <span id="languageResult"></span> would be a great language for you to look into</p>
+          <p class="card-text" id="textDisplay">Based on your answers, it looks like <em><span id="languageResult"></span></em> would be a great language for you to look into</p>
         </div>
       </div>
       <button type="click" id="resetButton">Take The Survey Again</button>

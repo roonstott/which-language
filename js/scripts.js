@@ -16,14 +16,14 @@ function handleSubmit(event) {
   document.getElementById("languageResult").innerText = makeSuggestion();
 }
 
-function resetFn() {
+function resetFn() { 
   preReveal();
-  document.getElementById("rubyCard").style.backgroundColor = "aquamarine";
-  document.getElementById("c#Card").style.backgroundColor = "aquamarine";
-  document.getElementById("pythonCard").style.backgroundColor = "aquamarine";
-  document.getElementById("javascriptCard").style.backgroundColor = "aquamarine";
-  document.getElementById("rustCard").style.backgroundColor = "aquamarine";
-  document.getElementById("goCard").style.backgroundColor = "aquamarine";
+  document.getElementById("rubyCard").style.backgroundColor = "antiquewhite";
+  document.getElementById("c#Card").style.backgroundColor = "antiquewhite";
+  document.getElementById("pythonCard").style.backgroundColor = "antiquewhite";
+  document.getElementById("javascriptCard").style.backgroundColor = "antiquewhite";
+  document.getElementById("rustCard").style.backgroundColor = "antiquewhite";
+  document.getElementById("goCard").style.backgroundColor = "antiquewhite";
 }
 
 function preReveal() {
@@ -42,7 +42,7 @@ function postReveal() {
 
 function setColors(){
   let color = colorCue();
-  document.getElementById(color).style.backgroundColor = "green";
+  document.getElementById(color).style.backgroundColor = "rgb(178, 197, 57)";
 }
 
 //Business Logic

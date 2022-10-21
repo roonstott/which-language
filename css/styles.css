@@ -1,7 +1,32 @@
 .infoSection .card-body {
-  background-color:aquamarine;
+  background-color:antiquewhite;
 }
 
 .hidden {
   display: none;
+}
+
+body {
+  text-align: center;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 100;
+}
+
+p {
+  font-family: fantasy;
+}
+
+#textDisplay {
+  font-size: 24px;
+  color:crimson;
+  font-weight: bold;
+}
+
+.card-body {
+  padding: 2%;
+  margin: 3%;
+}
+
+button {
+  margin-bottom: 10%;
 }
