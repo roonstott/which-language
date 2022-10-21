@@ -2,7 +2,6 @@
 
 window.addEventListener("load", function() {
   const form = document.getElementById("survey");
-  preReveal();
   form.addEventListener("submit", handleSubmit);
   const reset = document.getElementById("resetButton");
   reset.addEventListener("click", resetFn);
@@ -14,6 +13,17 @@ function handleSubmit(event) {
   event.preventDefault();
   postReveal();
   setColors();
+  document.getElementById("languageResult").innerText = makeSuggestion();
+}
+
+function resetFn() {
+  preReveal();
+  document.getElementById("rubyCard").style.backgroundColor = "aquamarine";
+  document.getElementById("c#Card").style.backgroundColor = "aquamarine";
+  document.getElementById("pythonCard").style.backgroundColor = "aquamarine";
+  document.getElementById("javascriptCard").style.backgroundColor = "aquamarine";
+  document.getElementById("rustCard").style.backgroundColor = "aquamarine";
+  document.getElementById("goCard").style.backgroundColor = "aquamarine";
 }
 
 function preReveal() {
@@ -28,16 +38,6 @@ function postReveal() {
   const hideSecond = document.getElementById("hiddenSecond");
   hideFirst.setAttribute("class" , "");
   hideSecond.setAttribute("class" , "hidden");
-}
-
-function resetFn() {
-  preReveal();
-  document.getElementById("rubyCard").style.backgroundColor = "aquamarine";
-  document.getElementById("c#Card").style.backgroundColor = "aquamarine";
-  document.getElementById("pythonCard").style.backgroundColor = "aquamarine";
-  document.getElementById("javascriptCard").style.backgroundColor = "aquamarine";
-  document.getElementById("rustCard").style.backgroundColor = "aquamarine";
-  document.getElementById("goCard").style.backgroundColor = "aquamarine";
 }
 
 function setColors(){
@@ -55,21 +55,25 @@ function makeSuggestion() {
   let q6Ans = parseInt(document.querySelector("input[name='radC']:checked").value);
   let topSum = q1Ans + q2Ans + q3Ans;
   let bottomSum = q4Ans + q5Ans + q6Ans;
-  branchMachine(topSum, bottomSum);
+  return branchMachine(topSum, bottomSum);
 }
 
 function branchMachine(top, bottom) {
   if (top <= 5 && bottom <= 5 ) {
-    return "Ruby"
+    return "Ruby";
   } else if (top <= 5 && bottom > 5 && bottom < 10) {
-    return "C#"
+    return "C#";
   } else if (top <= 5 && bottom >= 10) {
-    return "Python"
+    return "Python";
   } else if (top > 5 && bottom <= 5) {
-    return "Javascript"
+    return "Javascript";
   } else if (top > 5 && bottom > 5 && bottom < 10) {
-    return "Rust"
+    return "Rust";
   } else {
-    return "Go"
+    return "Go";
   }
+}
+
+function colorCue() {
+  
 }
